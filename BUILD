@@ -10,5 +10,7 @@ cc_binary(
         "//mediapipe/framework/port:opencv_imgproc",
         "//mediapipe/framework/port:parse_text_proto",
         "//mediapipe/framework/port:status",
+        "//mediapipe/examples/desktop:demo_run_graph_main",
+        "//mediapipe/graphs/holistic_tracking:holistic_tracking_cpu_graph_deps",
     ],
 )
