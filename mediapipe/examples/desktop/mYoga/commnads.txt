@@ -1,0 +1,5 @@
+bazel run --define MEDIAPIPE_DISABLE_GPU=1 mediapipe/examples/desktop/mYoga
+
+export GLOG_logtostderr=1
+bazel build -c opt --copt -DMESA_EGL_NO_X11_HEADERS --copt -DEGL_NO_X11 mediapipe/examples/desktop/mYoga
+GLOG_logtostderr=1 bazel-bin/mediapipe/examples/desktop/mYoga --calculator_graph_config_file=/home/narinder/Documents/mYoga/mediapipe/graphs/holistic_tracking/holistic_tracking_cpu.pbtxt
